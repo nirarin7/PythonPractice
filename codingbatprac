@@ -1,0 +1,9 @@
+def choc(big, small, goal):
+    lbar=5*big
+    if goal%5==0 and goal-lbar>=0:
+        btotal= abs(lbar-goal)
+        return btotal
+    elif goal<=lbar:
+        ntotal=int(goal/5)
+        atotal=ntotal*5
+        return atotal
