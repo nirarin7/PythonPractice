@@ -22,3 +22,18 @@ def choc(big, small, goal):
         smatotal=atotal-goal
         return smatotal
         
+       
+       
+       
+def choc(small, big, goal):
+    lbar=5*big
+    if goal-lbar>=0:
+        btotal= int(goal/5)*5
+        smtotal=goal-btotal
+        return smtotal
+    elif goal<=lbar:
+        ntotal=int(goal/5)
+        atotal=ntotal*5
+        stotal=goal-atotal
+        return stotal
+        
